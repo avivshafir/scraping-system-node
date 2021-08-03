@@ -1,5 +1,8 @@
 # Scraper System
 
+![image](https://user-images.githubusercontent.com/6135443/128094085-e92ba30a-0d1e-4e6e-94f3-c4b740b55c25.png)
+
+
 A node app that triggers a scraping process for a provided url
 
 The scraper is triggered by a POST call to the `/scrape` endpoint
