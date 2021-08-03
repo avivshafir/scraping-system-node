@@ -7,7 +7,7 @@ A node app that triggers a scraping process for a provided url
 
 The scraper is triggered by a POST call to the `/scrape` endpoint
 
-the scraper then uses a library called "bull" to create a background task queue based processing flow.
+the scraper then uses a library called "bull" to create a background task queue based processing flow.   
 https://github.com/OptimalBits/bull
 
 more than 10 mocked urls are being created, for each process call we re-generate the 10 mocked urls
