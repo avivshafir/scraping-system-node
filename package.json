@@ -1,0 +1,27 @@
+{
+  "name": "scraping-system-node",
+  "version": "1.0.0",
+  "description": "A node app that triggers a scraping process for a provided url",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon index.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "~4.17.1",
+    "jest": "~27.0.6",
+    "nodemon": "~2.0.12",
+    "redis-mock": "~0.56.3"
+  },
+  "dependencies": {
+    "bull": "~3.27.0",
+    "faker": "~5.5.3",
+    "redis": "~3.1.2"
+  }
+}
