@@ -66,6 +66,8 @@ npm test
 
 - Fetching/Parsing page timeout or error -> need to handle
 
+- The processor schedules too much worker processes, a worker thread will be scheduled even if the link was processed already
+
 ### Future improvements
 
 - Add e2e and integration tests for the whole flow, testing the redis results

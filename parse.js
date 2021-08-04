@@ -14,8 +14,6 @@ async function parse({ url }) {
 
   const html = generateRandomHtml();
 
-  console.log({ randomLinks, html });
-
   return {
     links: randomLinks,
     html,

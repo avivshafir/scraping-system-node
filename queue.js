@@ -1,6 +1,6 @@
 const Queue = require('bull');
 const path = require('path');
-const queue = new Queue('scraper-queue', 'redis://127.0.0.1:6379/2');
+const queue = new Queue('scraper-queue', 'redis://127.0.0.1:6379/2'); //should be set from env
 
 queue.on('error', function (error) {
     console.log("error")
@@ -26,7 +26,10 @@ queue.on('failed', function (job, err) {
     console.log("failed")
 })
 
-queue.process('links', 5, path.resolve(__dirname, './processor.js'));
+//should be set from env
+const concurrency = 1;
+
+queue.process('links', concurrency, path.resolve(__dirname, './processor.js'));
 
 module.exports = {
     queue
